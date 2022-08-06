@@ -1,0 +1,87 @@
+.page {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.container {
+  width: 375px;
+  margin: 0 auto;
+  padding: 16px;
+  border: 0.1px solid #000;
+}
+
+.button {
+  border: none;
+  background-color: inherit;
+  font-family: inherit;
+  border-radius: 4px;
+}
+
+.btn_secondary {
+  background-color: rgba(4, 104, 255, 0.1);
+  height: 42px;
+  color: #0468FF;
+}
+
+.btn_main {
+  background-color: #0468FF;
+  height: 42px;
+  color: #FFF;
+}
+
+.btnLink {
+  color: #0468FF;
+}
+
+.hr {
+  background-color: #E6E6E6;
+  border: none;
+  height: 1px;
+  margin-left: -16px;
+  margin-right: -16px;
+}
+
+.container .header {
+  height: 50px;
+  display: grid;
+  grid-template-columns: -webkit-min-content 1fr -webkit-min-content;
+  grid-template-columns: min-content 1fr min-content;
+  align-items: center;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+.container .header__burgerMenu button {
+  background-color: #fff;
+  border: none;
+}
+.container .header__favoriteBtn .like {
+  background-color: #fff;
+  border: none;
+}
+.container .header__favoriteBtn_active .like {
+  background-color: #EE3524;
+}
+
+.footerBtns {
+  display: grid;
+  grid-template-areas: "A A B B B B";
+  align-items: center;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+}
+.footerBtns .btn_secondary {
+  grid-area: A;
+}
+.footerBtns .btn_main {
+  grid-area: B;
+}/*# sourceMappingURL=style.css.map */
