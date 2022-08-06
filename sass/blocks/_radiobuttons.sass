@@ -1,0 +1,20 @@
+.radiobutton__input
+        position: absolute
+        appearance: none
+        &:checked + .radiobutton
+           background-color: $radio-active-color
+           border: 1px solid $border-active-color
+.radiobutton
+    display: inline-grid
+    grid-auto-flow: column
+    column-gap: 4px
+    align-items: center
+    justify-content: center
+    align-content: center
+    min-width: 50px
+    height: 40px
+    line-height: 4
+    padding: 0 10px
+    border-radius: 4px
+    border: 1px solid $border-hr-color
+    
