@@ -3,15 +3,16 @@
   background-color: inherit;
   font-family: inherit;
   border-radius: 4px;
+  font-weight: 700;
 }
 
-.btn_secondary {
+.btn--secondary {
   background-color: rgba(4, 104, 255, 0.1);
   height: 42px;
   color: #0468FF;
 }
 
-.btn_main {
+.btn--main {
   background-color: #0468FF;
   height: 42px;
   color: #FFF;
@@ -19,13 +20,17 @@
 
 .btnLink {
   color: #0468FF;
+  font-weight: 400;
 }
 
 .page {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 400;
+  letter-spacing: 0;
+  word-spacing: -0.2em;
 }
 
 .hide {
@@ -41,6 +46,7 @@
   margin: 0 auto;
   padding: 16px;
   border: 0.1px solid #000;
+  border-radius: 4px;
 }
 
 .hr {
@@ -51,7 +57,11 @@
   margin-right: -16px;
 }
 
-.container .header {
+.title {
+  font-weight: 700;
+}
+
+.header {
   height: 50px;
   display: grid;
   grid-template-columns: -webkit-min-content 1fr -webkit-min-content;
@@ -60,21 +70,71 @@
   -moz-column-gap: 20px;
        column-gap: 20px;
 }
-.container .header__burgerMenu button {
+
+.header__burgerMenu button {
   background-color: #fff;
   border: none;
 }
-.container .header__favoriteBtn .like {
-  background-color: #fff;
+
+.header__likeBtn {
   border: none;
+  fill: none;
+  stroke-opacity: 0.4;
 }
-.container .header__favoriteBtn_active .like {
-  background-color: #EE3524;
+.header__likeBtn:hover {
+  fill: #e94c3d;
+  stroke-opacity: 0;
+  transform: scale(1.2, 1.2);
+}
+
+.header__likeBtn--active {
+  fill: #e94c3d;
+  stroke-opacity: 0;
+  transform: scale(1.2, 1.2);
+}
+
+.suggestions {
+  line-height: 3;
+}
+
+.suggestions__radio {
+  min-width: 83px;
+  padding: 0px 49px;
 }
 
 .filters {
   display: grid;
   row-gap: 16px;
+  padding-top: 16px;
+}
+
+.type__radio {
+  min-width: 50px;
+  padding: 0px 12px 0 12px;
+}
+
+.input__number {
+  min-height: 40px;
+  border: 1px solid #E6E6E6;
+  border-radius: 4px;
+  -moz-appearance: textfield;
+  padding-left: 12px;
+}
+
+.input__number::-webkit-inner-spin-button, .input__number::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+.input__number__valChr {
+  position: absolute;
+  right: 9px;
+  bottom: 16px;
+}
+
+.propertyValueAndPayment {
+  position: relative;
+  display: grid;
+  grid-row-gap: 12px;
 }
 
 .banksSelect {
@@ -112,6 +172,12 @@
   align-items: center;
 }
 
+.propertyValueAndPayment {
+  position: relative;
+  display: grid;
+  grid-row-gap: 12px;
+}
+
 .radiobutton__input {
   position: absolute;
   -webkit-appearance: none;
@@ -131,10 +197,8 @@
   align-items: center;
   justify-content: center;
   align-content: center;
-  min-width: 50px;
   height: 40px;
   line-height: 4;
-  padding: 0 10px;
   border-radius: 4px;
   border: 1px solid #E6E6E6;
 }
@@ -142,9 +206,7 @@
 .checkB {
   position: relative;
 }
-.checkB__subTitle {
-  font-weight: 300;
-}
+
 .checkB__input {
   position: absolute;
   -webkit-appearance: none;
@@ -157,6 +219,7 @@
 .checkB__input:checked + .checkB__box::after {
   transform: translateX(18px);
 }
+
 .checkB__box {
   position: absolute;
   right: 0px;
@@ -185,9 +248,9 @@
   -moz-column-gap: 8px;
        column-gap: 8px;
 }
-.footerBtns .btn_secondary {
+.footerBtns .btn--secondary {
   grid-area: A;
 }
-.footerBtns .btn_main {
+.footerBtns .btn--main {
   grid-area: B;
 }/*# sourceMappingURL=style.css.map */

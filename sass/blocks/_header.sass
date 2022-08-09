@@ -1,19 +1,24 @@
 .container
-    .header
-        height: 50px
-        display: grid
-        grid-template-columns: min-content 1fr min-content
-        align-items: center
-        column-gap: 20px
-        &__burgerMenu
-            button
-                background-color: #fff
-                border: none
-        .header__logo
-        &__favoriteBtn
-            .like
-                background-color: #fff
-                border: none
-            &_active
-                .like
-                    background-color: #EE3524
+.header
+    height: 50px
+    display: grid
+    grid-template-columns: min-content 1fr min-content
+    align-items: center
+    column-gap: 20px
+.header__burgerMenu
+    button
+        background-color: #fff
+        border: none
+.header__logo
+.header__likeBtn
+    border: none
+    fill: none
+    stroke-opacity: 0.4
+    &:hover
+        fill: #e94c3d
+        stroke-opacity: 0
+        transform: scale(1.2, 1.2)
+.header__likeBtn--active
+    fill: #e94c3d
+    stroke-opacity: 0
+    transform: scale(1.2, 1.2)

@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>циан</title>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@300;500;700&display=swap"
-        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="sass/blocks/style.css" />
 </head>
 
@@ -39,9 +38,9 @@
                     </defs>
                 </svg>                    
             </div>
-            <button class="button likeBtn header__likeBtn header__likeBtn_active">
-                <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path opacity="0.9" d="M13.3084 3.34941L13.3231 3.33629L13.3372 3.3226C15.55 1.18023 19.1463 1.1782 21.3618 3.31651C23.5403 5.50709 23.5468 8.9613 21.3769 11.1595L11.9967 20.2678L11.9966 20.2678L11.9901 20.2742C11.9879 20.2764 11.983 20.2799 11.9756 20.2825L2.63191 11.1598C0.456599 8.96559 0.456031 5.51074 2.6302 3.31591C4.8457 1.1782 8.44156 1.18043 10.6542 3.3226L11.2739 3.92323L11.9426 4.57136L12.6366 3.95043L13.3084 3.34941Z" stroke="#152242" stroke-opacity="0.4" stroke-width="2"/>
+            <button class="button likeBtn header__likeBtn header__likeBtn--active">
+                <svg width="24" height="22" viewBox="0 0 24 22" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.9" d="M13.3084 3.34941L13.3231 3.33629L13.3372 3.3226C15.55 1.18023 19.1463 1.1782 21.3618 3.31651C23.5403 5.50709 23.5468 8.9613 21.3769 11.1595L11.9967 20.2678L11.9966 20.2678L11.9901 20.2742C11.9879 20.2764 11.983 20.2799 11.9756 20.2825L2.63191 11.1598C0.456599 8.96559 0.456031 5.51074 2.6302 3.31591C4.8457 1.1782 8.44156 1.18043 10.6542 3.3226L11.2739 3.92323L11.9426 4.57136L12.6366 3.95043L13.3084 3.34941Z" stroke="#152242" stroke-width="2"/>
                 </svg>    
             </button>
             
@@ -57,9 +56,8 @@
             </div>
             <div class="filters">
                 <div class="title filters__title">Фильтры</div>
-
                 <div class="type">
-                    <div class="title type__title">Тип недвижимости</div>
+                    <div class="title type__title">Тип недвижимости</div>   
                     <input class="radiobutton__input type__radio__input" type="radio" checked name="propertyType" id="n3">
                     <label class="radiobutton type__radio" for="n3">
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -93,26 +91,28 @@
                 </div>
                 <div class="type">
                     <div class="title type__title">Тип объекта</div>
-                    
                         <input class="radiobutton__input type__radio__input" type="radio" checked name="objectType" id="n6">
                         <label class="radiobutton type__radio" for="n6">Все</label>
-                    
                     
                         <input class="radiobutton__input type__radio__input" type="radio" name="objectType" id="n7">
                         <label class="radiobutton type__radio" for="n7">Новостройка</label>
                     
-                    
                         <input class="radiobutton__input type__radio__input" type="radio" name="objectType" id="n8">
                         <label class="radiobutton type__radio" for="n8">Вторичка</label>
-                    
                 </div>
                 <div class="propertyValueAndPayment">
                     <div class="title propertyValueAndPayment__title">Стоимость недвижимости</div>
                     <input class="input input__number propertyValueAndPayment__input__number" type="number" name="propertyValue" id="propertyValue__input" placeholder="3 000 000">
+                    <svg class="input__number__valChr" width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.2395 12V0.575999H5.2475C6.64483 0.575999 7.6795 0.858666 8.3515 1.424C9.03417 1.98933 9.3755 2.81067 9.3755 3.888C9.3755 4.61333 9.21017 5.23733 8.8795 5.76C8.54883 6.272 8.05817 6.66667 7.4075 6.944C6.7675 7.22133 5.97283 7.36 5.0235 7.36H3.6795V12H2.2395ZM0.8475 9.824V8.784H6.3195V9.824H0.8475ZM0.8475 7.36V6.144H4.5115V7.36H0.8475ZM4.8155 6.144C5.46617 6.144 6.0155 6.07467 6.4635 5.936C6.92217 5.79733 7.27417 5.568 7.5195 5.248C7.76483 4.928 7.8875 4.49067 7.8875 3.936C7.8875 3.21067 7.6635 2.672 7.2155 2.32C6.7675 1.968 6.06883 1.792 5.1195 1.792H3.6795V6.144H4.8155Z" fill="#152242"/>
+                    </svg>  
                 </div>
                 <div class="propertyValueAndPayment">
                     <div class="title propertyValueAndPayment__title">Первоначальный взнос</div>
                     <input class="input input__number propertyValueAndPayment__input__number" type="number" name="initialPayment" id="initialPayment__input" placeholder="300 000">
+                    <svg class="input__number__valChr" width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.2395 12V0.575999H5.2475C6.64483 0.575999 7.6795 0.858666 8.3515 1.424C9.03417 1.98933 9.3755 2.81067 9.3755 3.888C9.3755 4.61333 9.21017 5.23733 8.8795 5.76C8.54883 6.272 8.05817 6.66667 7.4075 6.944C6.7675 7.22133 5.97283 7.36 5.0235 7.36H3.6795V12H2.2395ZM0.8475 9.824V8.784H6.3195V9.824H0.8475ZM0.8475 7.36V6.144H4.5115V7.36H0.8475ZM4.8155 6.144C5.46617 6.144 6.0155 6.07467 6.4635 5.936C6.92217 5.79733 7.27417 5.568 7.5195 5.248C7.76483 4.928 7.8875 4.49067 7.8875 3.936C7.8875 3.21067 7.6635 2.672 7.2155 2.32C6.7675 1.968 6.06883 1.792 5.1195 1.792H3.6795V6.144H4.8155Z" fill="#152242"/>
+                    </svg> 
                 </div>
                 <div class="banksSelect">
                     <div class="title banksSelect__title">Банк</div>
@@ -168,8 +168,8 @@
             </div>
             <hr class="hr">
             <div class="footerBtns">
-                <button class="button btn_secondary">Сбросить</button>
-                <button class="button btn_main">Показать предложения</button>
+                <button class="button btn--secondary">Сбросить</button>
+                <button class="button btn--main">Показать предложения</button>
             </div>
        </main>
     </div>

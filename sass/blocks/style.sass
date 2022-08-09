@@ -6,7 +6,10 @@
     box-sizing: border-box
     margin: 0
     padding: 0
-    font-family: 'Fira Sans Extra Condensed', sans-serif
+    font-family: 'Roboto Mono', monospace
+    font-weight: 400
+    letter-spacing: 0
+    word-spacing: -0.2em
 .hide
     display: none
 .show
@@ -16,18 +19,22 @@
     margin: 0 auto
     padding: 16px
     border: 0.1px solid #000 
+    border-radius: 4px
 .hr
     background-color: $border-hr-color
     border: none
     height: 1px
     margin-left: -16px
     margin-right: -16px
+.title
+    font-weight: 700
     
 
 
 @import 'header'
+@import 'suggestions'
 @import 'filters'
-
+@import 'propertyValueAndPayment'
 @import 'radiobuttons'
 @import 'checkboxes'
 @import 'footerBtns'
