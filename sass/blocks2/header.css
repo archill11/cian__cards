@@ -1,0 +1,4 @@
+.page__body .container .header {
+  display: grid;
+  grid-template-areas: "A A A B B" "C C C B B";
+}/*# sourceMappingURL=header.css.map */

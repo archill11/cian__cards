@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
+
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -13,7 +14,7 @@
     <div class="container">
         <header class="header">
             <div class="burgerMenu header__burgerMenu">
-                <button>
+                <button class="button">
                     <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <line x1="1" y1="1" x2="19" y2="1" stroke="#152242" stroke-width="2" stroke-linecap="round"/>
                         <line x1="1" y1="15" x2="19" y2="15" stroke="#152242" stroke-width="2" stroke-linecap="round"/>
@@ -36,28 +37,27 @@
                     <rect width="77.6829" height="28" fill="white"/>
                     </clipPath>
                     </defs>
-                </svg>                    
+                </svg>
             </div>
             <button class="button likeBtn header__likeBtn header__likeBtn--active">
                 <svg width="24" height="22" viewBox="0 0 24 22" xmlns="http://www.w3.org/2000/svg">
                     <path opacity="0.9" d="M13.3084 3.34941L13.3231 3.33629L13.3372 3.3226C15.55 1.18023 19.1463 1.1782 21.3618 3.31651C23.5403 5.50709 23.5468 8.9613 21.3769 11.1595L11.9967 20.2678L11.9966 20.2678L11.9901 20.2742C11.9879 20.2764 11.983 20.2799 11.9756 20.2825L2.63191 11.1598C0.456599 8.96559 0.456031 5.51074 2.6302 3.31591C4.8457 1.1782 8.44156 1.18043 10.6542 3.3226L11.2739 3.92323L11.9426 4.57136L12.6366 3.95043L13.3084 3.34941Z" stroke="#152242" stroke-width="2"/>
                 </svg>    
             </button>
-            
-       </header>
-       <hr class="hr">
-       <main class="main">
+        </header>
+        <hr class="hr">
+        <main class="main">
             <div class="suggestions">
                 <div class="title suggestions__title">Ваши предложения</div>
-                    <input class="radiobutton__input suggestions__radio__input" type="radio" checked name="suggestions" id="n1">
-                    <label class="radiobutton suggestions__radio" for="n1">Ипотека</label>
-                    <input class="radiobutton__input suggestions__radio__input" type="radio" name="suggestions" id="n2">
-                    <label class="radiobutton suggestions__radio" for="n2">Кредит</label>
+                <input class="radiobutton__input suggestions__radio__input" type="radio" checked name="suggestions" id="n1">
+                <label class="suggestions__radio--left radiobutton suggestions__radio " for="n1">Ипотека</label>
+                <input class="radiobutton__input suggestions__radio__input" type="radio" name="suggestions" id="n2">
+                <label class="radiobutton suggestions__radio suggestions__radio--right" for="n2">Кредит</label>
             </div>
             <div class="filters">
                 <div class="title filters__title">Фильтры</div>
                 <div class="type">
-                    <div class="title type__title">Тип недвижимости</div>   
+                    <div class="title type__title">Тип недвижимости</div>
                     <input class="radiobutton__input type__radio__input" type="radio" checked name="propertyType" id="n3">
                     <label class="radiobutton type__radio" for="n3">
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -91,28 +91,28 @@
                 </div>
                 <div class="type">
                     <div class="title type__title">Тип объекта</div>
-                        <input class="radiobutton__input type__radio__input" type="radio" checked name="objectType" id="n6">
-                        <label class="radiobutton type__radio" for="n6">Все</label>
-                    
-                        <input class="radiobutton__input type__radio__input" type="radio" name="objectType" id="n7">
-                        <label class="radiobutton type__radio" for="n7">Новостройка</label>
-                    
-                        <input class="radiobutton__input type__radio__input" type="radio" name="objectType" id="n8">
-                        <label class="radiobutton type__radio" for="n8">Вторичка</label>
+                    <input class="radiobutton__input type__radio__input" type="radio" checked name="objectType" id="n6">
+                    <label class="radiobutton type__radio" for="n6">Все</label>
+
+                    <input class="radiobutton__input type__radio__input" type="radio" name="objectType" id="n7">
+                    <label class="radiobutton type__radio" for="n7">Новостройка</label>
+
+                    <input class="radiobutton__input type__radio__input" type="radio" name="objectType" id="n8">
+                    <label class="radiobutton type__radio" for="n8">Вторичка</label>
                 </div>
                 <div class="propertyValueAndPayment">
                     <div class="title propertyValueAndPayment__title">Стоимость недвижимости</div>
                     <input class="input input__number propertyValueAndPayment__input__number" type="number" name="propertyValue" id="propertyValue__input" placeholder="3 000 000">
                     <svg class="input__number__valChr" width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M2.2395 12V0.575999H5.2475C6.64483 0.575999 7.6795 0.858666 8.3515 1.424C9.03417 1.98933 9.3755 2.81067 9.3755 3.888C9.3755 4.61333 9.21017 5.23733 8.8795 5.76C8.54883 6.272 8.05817 6.66667 7.4075 6.944C6.7675 7.22133 5.97283 7.36 5.0235 7.36H3.6795V12H2.2395ZM0.8475 9.824V8.784H6.3195V9.824H0.8475ZM0.8475 7.36V6.144H4.5115V7.36H0.8475ZM4.8155 6.144C5.46617 6.144 6.0155 6.07467 6.4635 5.936C6.92217 5.79733 7.27417 5.568 7.5195 5.248C7.76483 4.928 7.8875 4.49067 7.8875 3.936C7.8875 3.21067 7.6635 2.672 7.2155 2.32C6.7675 1.968 6.06883 1.792 5.1195 1.792H3.6795V6.144H4.8155Z" fill="#152242"/>
-                    </svg>  
+                    </svg>
                 </div>
                 <div class="propertyValueAndPayment">
                     <div class="title propertyValueAndPayment__title">Первоначальный взнос</div>
                     <input class="input input__number propertyValueAndPayment__input__number" type="number" name="initialPayment" id="initialPayment__input" placeholder="300 000">
                     <svg class="input__number__valChr" width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M2.2395 12V0.575999H5.2475C6.64483 0.575999 7.6795 0.858666 8.3515 1.424C9.03417 1.98933 9.3755 2.81067 9.3755 3.888C9.3755 4.61333 9.21017 5.23733 8.8795 5.76C8.54883 6.272 8.05817 6.66667 7.4075 6.944C6.7675 7.22133 5.97283 7.36 5.0235 7.36H3.6795V12H2.2395ZM0.8475 9.824V8.784H6.3195V9.824H0.8475ZM0.8475 7.36V6.144H4.5115V7.36H0.8475ZM4.8155 6.144C5.46617 6.144 6.0155 6.07467 6.4635 5.936C6.92217 5.79733 7.27417 5.568 7.5195 5.248C7.76483 4.928 7.8875 4.49067 7.8875 3.936C7.8875 3.21067 7.6635 2.672 7.2155 2.32C6.7675 1.968 6.06883 1.792 5.1195 1.792H3.6795V6.144H4.8155Z" fill="#152242"/>
-                    </svg> 
+                    </svg>
                 </div>
                 <div class="banksSelect">
                     <div class="title banksSelect__title">Банк</div>
@@ -121,7 +121,7 @@
                             <circle cx="20" cy="20" r="19.5" fill="white" stroke="#F1F2F4"/>
                             <path d="M20 35C28.2843 35 35 28.2843 35 20C35 11.7157 28.2843 4.99998 20 4.99998C11.7157 4.99998 5 11.7157 5 20C5 28.2843 11.7157 35 20 35Z" fill="white"/>
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M32.8804 17.9058L32.3937 18.3001C30.772 19.3578 28.9594 20.1072 27.0514 20.5088C21.9793 21.8234 18.2871 22.0864 14.0942 23.138C13.2533 23.3418 12.4302 23.6099 11.6326 23.9398C12.4455 24.3478 13.2809 24.7121 14.1348 25.0309C15.7641 24.5391 17.4275 24.1614 19.1122 23.9007C20.059 23.7427 22.9532 23.2298 25.0494 22.7832C28.8228 21.9679 34.3546 20.2194 32.8808 17.9186V17.9058H32.8804ZM30.4594 13.133C29.5285 12.7211 28.5652 12.3826 27.5787 12.1209C27.0439 12.577 26.4365 12.9456 25.7802 13.212C26.9466 13.4608 28.0979 13.7724 29.2288 14.1455C29.4318 14.2505 30.3376 13.396 30.4865 13.1988L30.4594 13.133ZM11.9439 18.2079C16.8671 16.7488 22.0605 16.3019 27.3081 14.895C25.5944 14.3138 23.7642 14.1338 21.9658 14.3694C18.7219 14.7463 15.5179 15.3973 12.39 16.315C11.2271 16.6566 5.11386 18.3919 6.87221 20.8372C6.87221 20.8372 7.92687 19.3913 11.9439 18.2079V18.2079ZM8.5354 26.5827C8.5354 27.0292 8.79252 27.4367 9.40105 27.8969C9.47962 27.6577 9.6036 27.435 9.76642 27.2396C9.3471 27.0273 8.93645 26.7993 8.5354 26.5559V26.5822V26.5827ZM10.9023 26.3587C11.3321 26.1043 11.7849 25.8887 12.2551 25.7146C11.5514 25.4257 10.9023 25.11 10.0908 24.7679C9.78345 24.9515 9.49752 25.1673 9.23866 25.4121C9.79007 25.7403 10.3493 26.0559 10.9158 26.3587H10.9027H10.9023ZM29.8373 15.8417C28.3994 16.4619 26.9052 16.9503 25.3742 17.3008C23.6971 17.7214 19.6124 18.3133 15.217 19.2727C13.8642 19.5753 10.0637 20.4692 8.21062 22.0601C8.63406 22.3804 9.08674 22.6617 9.56344 22.9014C10.6031 22.2932 11.7352 21.8495 12.9178 21.5867C15.2625 20.9756 17.6426 20.5015 20.0455 20.1667C23.2558 19.6604 26.4211 18.9132 29.513 17.9318C30.2808 17.6701 31.0018 17.293 31.6498 16.8143C31.0957 16.4086 30.4855 16.081 29.8373 15.8413V15.8417ZM31.298 14.9477C31.7658 15.1576 32.2178 15.3993 32.6508 15.6709C32.9616 15.079 32.7721 14.6979 32.123 14.1455C31.8782 14.4451 31.5967 14.7145 31.2849 14.9477H31.298V14.9477ZM8.30578 23.9135C7.92839 23.6976 7.55845 23.4695 7.19655 23.2298C7.0071 23.6636 7.37248 24.137 7.77802 24.3736C7.9439 24.21 8.12026 24.0562 8.30578 23.9135V23.9135ZM29.3235 10.2148C29.1622 10.5876 28.9227 10.9235 28.6203 11.201C29.3729 11.4114 30.1132 11.6616 30.8379 11.9505C30.7436 11.28 29.9727 10.6359 29.3231 10.2148H29.3235ZM6.08732 14.4349C11.2677 11.0302 16.9893 9.04546 26.6725 10.7281C26.9261 10.6115 27.1471 10.4371 27.3166 10.2196C27.4862 10.0021 27.5993 9.748 27.6464 9.47886C24.9332 8.58072 22.0684 8.19706 19.2069 8.34863C15.2098 8.53142 11.2991 9.54438 7.73742 11.3195L8.6166 10.202C12.1722 8.472 16.061 7.48686 20.0319 7.31019C22.6206 7.19971 25.2092 7.54303 27.6734 8.32229C27.3757 7.74401 26.686 7.45465 25.6715 7.00766C22.4123 5.53539 16.3393 5.40367 11.3759 7.59912C12.0272 7.16243 12.7096 6.77152 13.418 6.42937C15.8397 5.40998 18.4631 4.92504 21.1001 5.00937C23.9904 5.00337 26.7786 6.04904 28.9176 7.94116C29.1991 8.26582 29.4025 8.64762 29.513 9.05864C30.7126 9.562 31.7367 10.3929 32.4613 11.4508C32.6733 11.9124 32.7437 12.4238 32.6643 12.9235C33.1614 13.209 33.5902 13.5944 33.922 14.0542C34.1482 14.3974 34.3 14.782 34.3681 15.1844C34.4304 15.4738 34.4277 15.7728 34.36 16.0611C34.2923 16.3493 34.1614 16.6199 33.9761 16.8542C34.4624 17.1629 34.8215 17.6283 34.9906 18.1689C35.0351 18.7812 34.9209 19.3946 34.6586 19.9528C34.3962 20.5109 33.994 20.9961 33.4889 21.3637C31.7989 22.6242 29.868 23.5449 27.8088 24.0719C23.7512 25.0972 20.1804 25.531 17.3267 26.0571C19.2326 26.5506 21.1977 26.7937 23.1697 26.7798C27.1435 26.6613 31.0394 25.6775 34.5711 23.9007C34.5711 23.9007 34.4493 24.2823 34.3275 24.6107C30.4743 26.6685 26.1577 27.766 21.7628 27.8055C19.3658 27.7188 16.9915 27.3209 14.7027 26.6222C14.03 26.7883 13.3735 27.0131 12.7418 27.2927C15.4617 28.5355 18.4092 29.2373 21.4114 29.3568C25.4172 29.4398 29.4023 28.7749 33.1511 27.398C32.9616 27.582 32.8673 27.8841 32.6779 28.0549C29.9452 29.2838 27.0182 30.0529 24.0214 30.3294C21.6185 30.4495 19.2093 30.3041 16.84 29.896C14.9965 29.5157 13.2071 28.9197 11.5108 28.1208C11.2266 28.3272 11.0372 28.6341 10.9835 28.9753C17.6515 32.4722 23.8865 32.5512 30.9872 30.2899L30.338 30.9077C27.406 32.2396 24.2 32.9012 20.965 32.842C17.7299 32.7828 14.5517 32.0043 11.6732 30.5661C11.5088 30.5004 11.3505 30.4212 11.2 30.3294C13.3716 32.4657 16.2423 33.7958 19.3151 34.0893C22.0936 34.2994 24.8864 33.9366 27.5111 33.0245L26.3346 33.6423C24.1037 34.6953 21.6243 35.1491 19.1528 34.957C15.8844 34.825 12.7758 33.5453 10.402 31.3547C9.87555 30.85 9.52538 30.1971 9.40105 29.4881C8.43668 29.0287 7.62551 28.3131 7.06123 27.424C6.79436 26.936 6.72669 26.368 6.87177 25.8336C6.89616 25.6794 6.94168 25.529 7.0071 25.3866C6.48007 25.0779 6.02056 24.6713 5.65472 24.1901C5.47273 23.8477 5.39036 23.4634 5.41652 23.0788C5.44268 22.6942 5.57637 22.3238 5.80314 22.0078C5.52312 21.7181 5.29474 21.3849 5.12739 21.022C5.01007 20.6341 4.97327 20.2274 5.01913 19.8255C5.14036 19.0942 5.47875 18.4133 5.9926 17.8668C7.51404 16.3548 9.43183 15.2772 11.5379 14.751C13.4959 14.1145 15.4925 13.5964 17.5162 13.1997C20.1515 12.8057 22.7615 12.2658 25.3336 11.5825C21.9494 10.9213 18.4631 10.9297 15.0823 11.6072C11.7014 12.2848 8.49528 13.6176 5.65472 15.5264L6.08732 14.4353V14.4349Z" fill="#1D5378"/>
-                        </svg>  
+                        </svg>
                         <svg class="banksSelect__list__svg" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="20" cy="20" r="19.5" fill="white" stroke="#F1F2F4"/>
                             <rect x="5" y="4.99998" width="30" height="30" rx="15" fill="white"/>
@@ -133,7 +133,7 @@
                             <path d="M5 20C5 28.2843 11.7157 35 20 35C28.2843 35 35 28.2843 35 20H5Z" fill="black"/>
                             <path d="M11.25 21.25H28.75V18.75H11.2504L11.25 21.25Z" fill="#FFFFFE"/>
                         </svg>
-                        <button class="button btnLink banksSelect__btnLink">выбрать</button>   
+                        <button class="button btnLink banksSelect__btnLink">выбрать</button>
                     </div>
                 </div>
                 <div class="checkboxesPart">
@@ -146,21 +146,21 @@
                     <div class="title checkboxesPart__title">Услуги, снижающие процентную ставку</div>
                     <label class="checkB">
                         <div class="checkB__subTitle">Быстрый выход на сделку</div>
-                        <div class="button btnLink">Подробнее</div>
+                        <div class="button btnLink btnLink__checkbox">Подробнее</div>
                         <input class="checkB__input" type="checkbox" checked name="">
                         <span class="checkB__box"></span>
                     </label>
                     <hr class="hr">
                     <label class="checkB">
                         <div class="checkB__subTitle">Электронная регистрация сделки </div>
-                        <div class="button btnLink">Подробнее</div>
+                        <div class="button btnLink btnLink__checkbox">Подробнее</div>
                         <input class="checkB__input" type="checkbox" checked name="">
                         <span class="checkB__box"></span>
                     </label>
                     <hr class="hr">
                     <label class="checkB">
                         <div class="checkB__subTitle">Предоставление доступа к ПФР</div>
-                        <div class="button btnLink">Подробнее</div>
+                        <div class="button btnLink btnLink__checkbox">Подробнее</div>
                         <input class="checkB__input" type="checkbox" checked name="">
                         <span class="checkB__box"></span>
                     </label>
@@ -169,13 +169,12 @@
             <hr class="hr">
             <div class="footerBtns">
                 <button class="button btn--secondary">Сбросить</button>
-                <button class="button btn--main">Показать предложения</button>
+                <button class="button btn--main btnLink"><a class="button btn--main" href="/index2.html">Показать предложения</a></button>
             </div>
-       </main>
+        </main>
     </div>
-   
-    <!-- <script defer src="https://kit.fontawesome.com/03ed03337a.js" crossorigin="anonymous"></script> -->
-    <!-- <script defer src="./js/script.js" crossorigin="anonymous"></script> -->
+
+    <script defer src="/js/script.js"></script>
 </body>
 
 </html>
