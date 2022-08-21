@@ -5,6 +5,12 @@
   border-radius: 4px;
   font-weight: 700;
   cursor: pointer;
+  display: grid;
+  grid-auto-flow: column;
+  align-content: center;
+  justify-content: center;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
 }
 
 .btn--secondary {
@@ -19,9 +25,48 @@
   color: #FFF;
 }
 
+.btn--white {
+  background-color: #FFF;
+  height: 42px;
+  color: #0468FF;
+  border: 1px solid #0468FF;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  grid-auto-flow: column;
+  gap: 6px;
+}
+
+.btn--more {
+  border: 1px solid rgba(4, 104, 255, 0.1);
+  padding: 0 8px;
+  font-size: 12px;
+}
+
 .btnLink {
   color: #0468FF;
   font-weight: 400;
+  cursor: pointer;
+}
+
+.title {
+  font-weight: 700;
+}
+
+.gray-title {
+  color: #A1A7B3;
+  font-size: 14px;
+}
+
+.exemption-title {
+  color: #FF7E00;
+}
+
+.exemption-title-bg {
+  color: #FF7E00;
+  background-color: rgba(255, 126, 0, 0.1);
+  padding: 0 8px;
+  font-size: 12px;
 }
 
 a {
@@ -47,6 +92,7 @@ a {
 }
 
 .container {
+  box-sizing: border-box;
   width: 375px;
   margin: 0 auto;
   padding: 16px;
@@ -60,10 +106,6 @@ a {
   height: 1px;
   margin-left: -16px;
   margin-right: -16px;
-}
-
-.title {
-  font-weight: 700;
 }
 
 .header {
@@ -98,8 +140,8 @@ a {
 }
 
 .suggestions__radio {
-  min-width: 83px;
-  padding: 0px 52px;
+  min-width: 79px;
+  padding: 0px 45px;
   margin: 0 -3px;
 }
 
@@ -117,9 +159,23 @@ a {
   padding-top: 16px;
 }
 
+.type__radio-wrapper {
+  position: relative;
+  height: 42px;
+}
+
+.type__radio-wrapper--absolut {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 8px;
+  position: absolute;
+  right: -28px;
+  transition: all 0.1s ease;
+}
+
 .type__radio {
   min-width: 50px;
-  padding: 0px 12px 0 12px;
+  padding: 0px 14px 0 14px;
 }
 
 .input__number {
@@ -183,6 +239,9 @@ a {
 
 .btnLink__checkbox {
   width: 100px;
+  position: relative;
+  bottom: 11px;
+  right: 6px;
 }
 
 .propertyValueAndPayment {
@@ -237,7 +296,7 @@ a {
 .checkB__box {
   position: absolute;
   right: 0px;
-  bottom: 16px;
+  bottom: 11px;
   background-color: #E6E6E6;
   width: 50px;
   height: 32px;
